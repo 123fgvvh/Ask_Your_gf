@@ -21,6 +21,8 @@ app.get('/style.css', (req, res) => {
     res.sendFile(path.join(__dirname, 'style.css'));
 });
 
+app.use(express.static('public'));
+
 // API endpoint to store responses
 app.post('/api/response', (req, res) => {
     const { name, response } = req.body;
