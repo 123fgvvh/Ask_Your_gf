@@ -20,6 +20,7 @@ body {
     width: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
+    display: flex;
 }
 
 h1 {
